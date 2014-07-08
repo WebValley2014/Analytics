@@ -1,0 +1,4 @@
+Usage:
+use 6_pickle_rf_svmlin_training.py to run Machine Learning on input data
+use 3_rf_svmlin_validation.py to predict labels on new data from previous ML running
+
