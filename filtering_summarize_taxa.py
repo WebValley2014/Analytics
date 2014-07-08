@@ -15,6 +15,7 @@ process.wait()
 
 s = np.loadtxt(name + ".txt", dtype="string", delimiter='\t')
 ncol = s.shape[1] - 2
+print ncol
 
 out_file = name + "_filter_taxa.biom"
 
@@ -33,9 +34,7 @@ process2.wait()
 
 in_file = out_file
 
-summarize_taxa = ["summarize_taxa.py", "-i", in_file, "-o", "./summarized_taxa"]
+summarize_taxa = ["summarize_taxa.py", "-i", in_file, "-o", "./summarized_taxa", "-L2,3,4,5,6,7"]
 
 process3 = subprocess.Popen(summarize_taxa)
 process3.wait()
-
-process4 = subprocess.Popen(summarize_taxa + ["-L 7"])
