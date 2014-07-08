@@ -13,6 +13,7 @@ writer = csv.writer(outw, delimiter='\t', lineterminator='\n')
 for a in range(mapping.shape[0]):
 	if a == 0:
 		writer.writerow( ["forward", mapping[2,2] ] )
+		writer.writerow( ["barcode", mapping[a,1], mapping[a,0]] )
 	else:
 		writer.writerow( ["barcode", mapping[a,1], mapping[a,0]] )
 
