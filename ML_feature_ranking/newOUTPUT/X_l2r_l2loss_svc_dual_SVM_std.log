@@ -1,0 +1,10 @@
+SOFTWARE VERSIONS
+Python	2.7.6 (default, Mar 22 2014, 22:59:56) [GCC 4.8.2]
+Numpy	1.8.1
+MLPY	3.5.0
+CV PARAMETERS
+Folds	5
+Iterations	10
+INPUT FILES
+Data file	X.txt
+Labels file	Y.txt
